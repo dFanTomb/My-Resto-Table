@@ -1,0 +1,12 @@
+<div class="simple-form p-5">
+  <%= simple_form_for(restaurant) do |f| %>
+    <%= f.input :name %>
+    <%= f.input :address %>
+    <%= f.input :city %>
+    <%= f.input :postal_code %>
+    <%= f.input :rating, collection: 1..5, as: :radio_buttons %>
+    <%= f.submit %>
+  <% end %>
+
+  <%= link_to "Back", :back %>
+</div>
