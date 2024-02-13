@@ -1,0 +1,14 @@
+<% @bookings.each do |booking| %>
+  <li>
+    <%= link_to restaurant_path(booking.restaurant) do %>
+      <%= booking.restaurant.name %>
+    <% end %>
+    <%= booking.date.strftime("%e %b %Y %H:%M") %>
+
+    <%= link_to "Back", restaurants_path %>
+    <%= link_to "Edit", edit_restaurant_booking_path(booking.restaurant, booking) %>
+    <%= link_to "Cancel Booking", restaurant_delete_booking_path(booking.restaurant, booking),
+        data: {turbo_method: :delete, turbo_confirm:
+        "Cancel booking for #{booking.restaurant.name} restaurant at #{booking.date.strftime("%e %b %Y %H:%M")}?"} %>
+  </li>
+<% end %>
