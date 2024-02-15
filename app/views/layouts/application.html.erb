@@ -13,6 +13,21 @@
   </head>
 
   <body>
-    <%= yield %>
+    <header>
+        <%= render "shared/navbar" %>
+        <%= render "shared/flashes" %>
+    </header>
+
+    <main>
+      <p class="notice"><%= notice %></p>
+      <p class="alert"><%= alert %></p>
+      <div class="main">
+        <%= yield %>
+      </div>
+    </main>
+
+    <footer>
+
+    </footer>
   </body>
 </html>
