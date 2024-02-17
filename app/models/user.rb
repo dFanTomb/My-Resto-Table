@@ -5,9 +5,9 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable
 
   # has_one_attached :photo
-  # has_many :bookings
+  has_many :bookings
 
-  # validates :user_name, :password, :email, presence: true
-  # validates :email, uniqueness: true
-  # validates :password, length: { minimum: 6 }
+  validates :user_name, :password, :email, presence: true
+  validates :email, uniqueness: true
+  validates :password, length: { minimum: 6 }
 end
