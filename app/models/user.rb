@@ -7,6 +7,7 @@ class User < ApplicationRecord
   has_one_attached :avatar
   has_many :bookings
 
+
   validates :password, :email, presence: true
   validates :email, uniqueness: true
   validates :password, length: { minimum: 6 }

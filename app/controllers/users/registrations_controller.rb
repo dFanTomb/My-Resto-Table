@@ -6,7 +6,8 @@ class Users::RegistrationsController < Devise::RegistrationsController
 
   # GET /resource/sign_up
   # def new
-  #   super
+  #   @user = User.new
+  #   puts "DEBUG: #{@user.inspect}"
   # end
 
   # POST /resource
