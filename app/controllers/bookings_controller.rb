@@ -3,7 +3,8 @@ class BookingsController < ApplicationController
   before_action :set_restaurant, only: %i[new create]
 
   def index
-    @bookings = Booking.all.order(date: :asc)
+    # @bookings = Booking.all.order(date: :asc) # shows all booking from all users
+    @bookings = current_user.bookings.order(date: :asc) # shows all bookings from current user only
   end
 
   def new
@@ -11,9 +12,9 @@ class BookingsController < ApplicationController
   end
 
   def create
-    @restaurant = Restaurant.find(params[:restaurant_id])
-    @booking = @restaurant.bookings.build(booking_params)
+    @booking = @restaurant.bookings.new(booking_params)
     @booking.user = current_user
+
 
     if @booking.save
       redirect_to bookings_path
@@ -40,7 +41,6 @@ class BookingsController < ApplicationController
     redirect_to bookings_path, status: :see_other
   end
 
-
   private
 
   def set_booking
@@ -48,7 +48,7 @@ class BookingsController < ApplicationController
   end
 
   def set_restaurant
-    @restaurant = Restaurant.find_by(id: params[:restaurant_id])
+    @restaurant = Restaurant.find(params[:restaurant_id])
   end
 
   def booking_params

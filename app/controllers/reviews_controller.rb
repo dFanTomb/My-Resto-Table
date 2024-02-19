@@ -21,7 +21,6 @@ class ReviewsController < ApplicationController
     redirect_to restaurant_path(@review.restaurant), status: :see_other
   end
 
-
   private
 
   def set_restaurant

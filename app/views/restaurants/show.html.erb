@@ -1,24 +1,28 @@
-<h2>Restaurant <%= @restaurant.name %></h2>
-<p>Address: <%= @restaurant.address %></p>
-<p>City: <%= @restaurant.city %></p>
-<p>Postal Code: <%= @restaurant.postal_code %></p>
-<p>Rating: <%= @restaurant.rating %></p>
-<p><strong>Reviews</strong></p>
-<ul class="list-group">
-  <% @restaurant.reviews.each do |review| %>
-    <li class="list-group-item">
-      <%= review.content %>
-      <%= link_to "Delete", review_path(review),
-          data: {turbo_method: :delete, turbo_confirm: "Delete this review?"} %>
-    </li>
-  <% end %>
-</ul>
-<br>
+<div class="container">
+  <div class="restaurant">
+    <h2>Restaurant <%= @restaurant.name %></h2>
+    <p>Address: <%= @restaurant.address %></p>
+    <p>City: <%= @restaurant.city %></p>
+    <p>Postal Code: <%= @restaurant.postal_code %></p>
+    <p>Rating: <%= @restaurant.rating %></p>
+    <p><strong>Reviews</strong></p>
+    <ul class="list-group">
+      <% @restaurant.reviews.each do |review| %>
+        <li class="list-group-item">
+          <%= review.content %>
+          <%= link_to "Delete", review_path(review),
+              data: {turbo_method: :delete, turbo_confirm: "Delete this review?"} %>
+        </li>
+      <% end %>
+    </ul>
+    <br>
 
-<%= link_to "Back", :back %>
-<%= link_to "Restaurants", restaurants_path %>
-<%= link_to "Edit", edit_restaurant_path %>
-<%= link_to "Add Review", new_restaurant_review_path(@restaurant) %>
-<%= link_to "Delete", restaurant_path(@restaurant),
-    data: {turbo_method: :delete, turbo_confirm: "Are you sure?"} %>
-<%= link_to "Book a table", new_restaurant_booking_path(restaurant_id: @restaurant.id) %>
+    <%= link_to "Back", :back %>
+    <%= link_to "Edit", edit_restaurant_path %>
+    <%= link_to "Add Review", new_restaurant_review_path(@restaurant) %>
+    <%= link_to "Delete", restaurant_path(@restaurant),
+        data: {turbo_method: :delete, turbo_confirm: "Are you sure?"} %>
+    <%= link_to "Restaurants", restaurants_path %>
+    <%= link_to "Book a table", new_restaurant_booking_path(restaurant_id: @restaurant.id) %>
+  </div>
+</div>

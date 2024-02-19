@@ -19,4 +19,5 @@ https://kitt.lewagon.com/camps/1086/lectures/05-Rails%2F06-Airbnb-Devise#source
 Use forms from Bootstrap: https://getbootstrap.com/docs/5.1/forms/overview/
 
 
-Create booking for user. When book a resto from one user it shows to all users
+Create a booking per user. When booking a restaurant from one user, it shows to all users.
+# done #
