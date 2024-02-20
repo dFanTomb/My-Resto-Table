@@ -3,8 +3,7 @@ class BookingsController < ApplicationController
   before_action :set_restaurant, only: %i[new create]
 
   def index
-    # @bookings = Booking.all.order(date: :asc) # shows all booking from all users
-    @bookings = current_user.bookings.order(date: :asc) # shows all bookings from current user only
+    @bookings = current_user.bookings.order(date: :asc)
   end
 
   def new

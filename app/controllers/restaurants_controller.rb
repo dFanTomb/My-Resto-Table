@@ -3,6 +3,11 @@ class RestaurantsController < ApplicationController
 
   def index
     @restaurants = Restaurant.all
+    if params[:query].present?
+      @restaurants = @restaurants.where("LOWER(name) ILIKE ?", "%#{params[:query].downcase}") ||
+      @restaurants = @restaurants.where("LOWER(city) ILIKE ?", "%#{params[:querycity].downcase}") ||
+      @restaurants = @restaurants.where("LOWER(address) ILIKE ?", "%#{params[:queryaddress].downcase}")
+    end
   end
 
   def new

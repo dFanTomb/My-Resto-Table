@@ -21,3 +21,7 @@ Use forms from Bootstrap: https://getbootstrap.com/docs/5.1/forms/overview/
 
 Create a booking per user. When booking a restaurant from one user, it shows to all users.
 # done #
+
+
+# Create search form at home page OR home page will be log in / sign up bootstrap
+# Create filter from at restaurants
