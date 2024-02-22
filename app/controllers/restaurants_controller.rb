@@ -3,11 +3,19 @@ class RestaurantsController < ApplicationController
 
   def index
     @restaurants = Restaurant.all
-    if params[:query].present?
-      @restaurants = @restaurants.where("LOWER(name) ILIKE ?", "%#{params[:query].downcase}") ||
-      @restaurants = @restaurants.where("LOWER(city) ILIKE ?", "%#{params[:querycity].downcase}") ||
-      @restaurants = @restaurants.where("LOWER(address) ILIKE ?", "%#{params[:queryaddress].downcase}")
+
+    unless @restaurants = nil
+      query = [:queryname, :querycity, :queryaddress]
+      if query.any? { |attribute| params[attribute].present? }
+        query.each do |attribute|
+          if params[attribute].present?
+            column_name = attribute.to_s.gsub('query', '').to_sym
+            @restaurants = @restaurants.where("#{column_name} ILIKE ?", "%#{params[attribute]}%")
+          end
+        end
+      end
     end
+
   end
 
   def new

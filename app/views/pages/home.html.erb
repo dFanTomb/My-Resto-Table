@@ -4,8 +4,8 @@
 
   <div class="search-form">
     <%= form_with url: restaurants_path, method: :get, class: "d-flex" do %>
-      <%= text_field_tag :query,
-            params[:query],
+      <%= text_field_tag :queryname,
+            params[:queryname],
             class: "form-control",
             placeholder: "Restaurant..."
       %>

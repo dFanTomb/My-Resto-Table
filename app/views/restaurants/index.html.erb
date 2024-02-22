@@ -1,7 +1,11 @@
 <div class="container">
   <ul>
-    <% @restaurants.each do |restaurant| %>
-      <li><%= link_to restaurant.name, restaurant_path(restaurant) %></li>
+    <% if @restaurants.present? %>
+      <% @restaurants.each do |restaurant| %>
+        <li><%= link_to restaurant.name, restaurant_path(restaurant) %></li>
+      <% end %>
+    <% else %>
+      <h2>Restaurant not found!</h2>
     <% end %>
   </ul>
   <div class="btn-create">
