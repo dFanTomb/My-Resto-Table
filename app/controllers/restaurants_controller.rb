@@ -4,7 +4,7 @@ class RestaurantsController < ApplicationController
   def index
     @restaurants = Restaurant.all
 
-    unless @restaurants = nil
+    # unless @restaurants = nil
       query = [:queryname, :querycity, :queryaddress]
       if query.any? { |attribute| params[attribute].present? }
         query.each do |attribute|
@@ -14,7 +14,7 @@ class RestaurantsController < ApplicationController
           end
         end
       end
-    end
+    # end
 
   end
 

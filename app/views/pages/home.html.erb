@@ -1,25 +1,27 @@
 <div class="container">
-  <h1>Pages#home</h1>
-  <p>Find me in app/views/pages/home.html.erb</p>
+  <h1>My Resto Table</h1>
+  <p>your reservation's buddy</p>
 
-  <div class="search-form">
-    <%= form_with url: restaurants_path, method: :get, class: "d-flex" do %>
-      <%= text_field_tag :queryname,
-            params[:queryname],
-            class: "form-control",
-            placeholder: "Restaurant..."
-      %>
-      <%= text_field_tag :querycity,
-            params[:querycity],
-            class: "form-control",
-            placeholder: "City..."
-      %>
-      <%= text_field_tag :queryaddress,
-            params[:queryaddress],
-            class: "form-control",
-            placeholder: "Address..."
-      %>
-      <%= submit_tag "Search", class: "btn btn-primary" %>
-    <% end %>
-  </div>
+  <% if current_user.present? %>
+    <div class="search-form">
+      <%= form_with url: restaurants_path, method: :get, class: "d-flex" do %>
+        <%= text_field_tag :queryname,
+              params[:queryname],
+              class: "form-control",
+              placeholder: "Name..."
+        %>
+        <%= text_field_tag :querycity,
+              params[:querycity],
+              class: "form-control",
+              placeholder: "City..."
+        %>
+        <%= text_field_tag :queryaddress,
+              params[:queryaddress],
+              class: "form-control",
+              placeholder: "Address..."
+        %>
+        <%= submit_tag "Search", class: "btn btn-primary" %>
+      <% end %>
+    </div>
+  <% end %>
 </div>

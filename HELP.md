@@ -25,3 +25,4 @@ Create a booking per user. When booking a restaurant from one user, it shows to 
 
 # Create search form at home page OR home page will be log in / sign up bootstrap
 # Create filter from at restaurants BUT the Restaurants button needs to show all restaurants
+# PopUp modal Log-In
