@@ -8,6 +8,7 @@
   background-color: #1c1919;
   border-radius: 12px;
   width: 600px;
+  margin: 0 auto;
 }
 
 
@@ -21,6 +22,8 @@
 
 .modal-header {
   border: none;
+  display: flex;
+  flex-direction: column;
 }
 
 .modal-footer {

@@ -1,0 +1,17 @@
+yarn install v1.22.19
+[1/4] Resolving packages...
+success Already up-to-date.
+Done in 0.09s.
+yarn run v1.22.19
+$ esbuild app/javascript/*.* --bundle --sourcemap --format=esm --outdir=app/assets/builds --public-path=/assets
+Done in 0.12s.
+yarn install v1.22.19
+[1/4] Resolving packages...
+success Already up-to-date.
+Done in 0.09s.
+yarn run v1.22.19
+$ yarn build:css:compile && yarn build:css:prefix
+$ sass ./app/assets/stylesheets/application.bootstrap.scss:./app/assets/builds/application.css --no-source-map --load-path=node_modules
+$ postcss ./app/assets/builds/application.css --use=autoprefixer --output=./app/assets/builds/application.css
+info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
+info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
