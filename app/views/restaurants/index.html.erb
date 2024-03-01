@@ -1,8 +1,12 @@
-<div class="container">
+<div class="restaurants-container">
   <ul>
     <% if @restaurants.present? %>
       <% @restaurants.each do |restaurant| %>
-        <li><%= link_to restaurant.name, restaurant_path(restaurant) %></li>
+        <li>
+          <div class="restaurant-card">
+            <%= link_to restaurant.name, restaurant_path(restaurant) %>
+          </div>
+        </li>
       <% end %>
     <% else %>
       <h2>Restaurant not found!</h2>

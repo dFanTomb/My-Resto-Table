@@ -1,21 +1,21 @@
-.navbar-lewagon {
+.navbar-mrst {
   justify-content: space-between;
   background: rgb(255, 255, 255);
-  background-color: rgb(246, 255, 0);
+  background-color: #21f70540;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.363);
+  height: 60px;
 }
 
-.navbar-lewagon .navbar-collapse {
+.navbar-mrst .navbar-collapse {
   flex-grow: 0;
 }
 
-.navbar-lewagon .navbar-brand img {
+.navbar-mrst .navbar-brand img {
   width: 40px;
 }
 
-a {
-  color: $blue;
-
-  &:hover {
-    color: $gray;
-  }
+#navbarSupportedContent > ul {
+  display: contents;
+  justify-content: center;
+  align-items: center;
 }

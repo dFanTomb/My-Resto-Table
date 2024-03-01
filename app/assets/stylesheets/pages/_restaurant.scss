@@ -1,0 +1,50 @@
+.restaurants-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+ul {
+  width: 1400px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 6px;
+}
+
+.restaurant-card {
+  border-radius: 8px;
+  border: 1px solid rgba(171, 171, 171, 0.237);
+  padding: 6px 12px;
+  margin: 8px 14px;
+}
+
+.restaurant-card a {
+  color: rgba(128, 128, 128, 0.836);
+  text-decoration: none;
+
+  &:hover {
+    color: rgba(239, 89, 25, 0.836);
+  }
+}
+
+.restaurants-container ul {
+  list-style-type: none;
+}
+
+#navbarSupportedContent {
+  display: contents;
+}
+
+.btn-create a {
+text-decoration: none;
+padding: 6px 12px;
+margin: 10px 20px;
+background-color: rgba(239, 89, 25, 0.203);
+color: rgb(148, 148, 148);
+border-radius: 6px;
+
+  &:hover {
+    color: rgba(171, 171, 171, 0.781);
+    background-color: rgba(239, 89, 25, 0.509);
+  }
+}
