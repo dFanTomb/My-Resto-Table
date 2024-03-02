@@ -12,31 +12,30 @@
   </head>
 
   <body>
-    <header>
-      <%= render "shared/navbar" %>
-      <div
-          class="modal"
-          tabindex="-1"
-          data-controller="modal"
-          data-action="turbo:frame-load->modal#open turbo:submit-end->modal#close"
-          >
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <%= turbo_frame_tag "modal" %>
+    <div class="body-container">
+      <header>
+        <%= render "shared/navbar" %>
+        <div
+            class="modal"
+            tabindex="-1"
+            data-controller="modal"
+            data-action="turbo:frame-load->modal#open turbo:submit-end->modal#close"
+            >
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <%= turbo_frame_tag "modal" %>
+            </div>
           </div>
         </div>
-      </div>
-    </header>
+      </header>
 
-    <main>
-      <p class="alert"><%= alert %></p>
-      <div class="main">
-        <%= yield %>
-      </div>
-    </main>
-
-    <footer>
-        <%= render "shared/flashes" %>
-    </footer>
+        <p class="alert"><%= alert %></p>
+        <div class="main">
+          <%= yield %>
+        </div>
+      <footer>
+          <%= render "shared/flashes" %>
+      </footer>
+    </div>
   </body>
 </html>

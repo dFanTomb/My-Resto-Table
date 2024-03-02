@@ -1,7 +1,7 @@
 .navbar-mrst {
   justify-content: space-between;
   background: rgb(255, 255, 255);
-  background-color: #21f70540;
+  background-color: #43766C;
   border-bottom: 1px solid rgba(128, 128, 128, 0.363);
   height: 60px;
 }
@@ -18,4 +18,28 @@
   display: contents;
   justify-content: center;
   align-items: center;
+}
+
+
+#navbarSupportedContent > ul > li > a {
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 7px 18px;
+
+  &:hover {
+    color: #F8FAE5;
+    border: 2px solid rgba(228, 228, 228, 0.25);
+    transform: translate(-2px, -2px);
+    transition: all .15s ease-in-out;
+  }
+}
+
+#logo-img {
+  margin-left: 6px;
+
+  &:hover {
+    width: 45px;
+    transform: translate(2px, -2px);
+    transition: all .15s ease-in-out;
+  }
 }

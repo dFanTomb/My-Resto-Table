@@ -1,3 +1,8 @@
+#modal {
+  background-color: #5e3830;
+  border-radius: 12px;
+}
+
 .modal-center-container {
   background-color: #1c1919d6;
   padding-left: 50px;
@@ -12,14 +17,6 @@
 }
 
 
-.modal-body {
-  color: black;
-}
-
-.modal-title {
-  color: black;
-}
-
 .modal-header {
   border: none;
   display: flex;
@@ -33,6 +30,72 @@
 
 .modal-content {
   border-radius: 10px;
-  background: white;
+  background: #B19470;
   width: 80%;
+}
+
+.modal-body {
+  color: #5e3830;
+  display: grid;
+}
+
+.modal-title, .title-sign-up, .form-label, .form-text {
+  color: #5e3830;
+}
+
+.modal-body > a {
+  text-decoration: none;
+  font-size: 16px;
+  color: #5e3830;
+  // border: 1px solid rgba(228, 228, 228, 0.25);
+  // border-radius: 6px;
+  margin: 8px 0;
+
+  &:hover {
+    color: #F8FAE5;
+  }
+}
+
+.form-actions > .btn {
+  color: #5e3830;
+  border: 1px solid rgba(228, 228, 228, 0.25);
+  border-radius: 6px;
+
+  &:hover {
+    color: #F8FAE5;
+  }
+}
+
+
+.modal-body > a.sign-up {
+  border: 1px solid rgba(228, 228, 228, 0.25);
+  border-radius: 6px;
+  text-align: center;
+  width: 90px;
+  padding: 5px;
+}
+
+.modal-body > a.forgotten-password {
+  border: 1px solid rgba(228, 228, 228, 0.25);
+  border-radius: 6px;
+  text-align: center;
+  width: 210px;
+  padding: 5px;
+}
+
+
+a.log-in {
+  text-decoration: none;
+  color: #5e3830;
+  border: 1px solid rgba(228, 228, 228, 0.25);
+  border-radius: 6px;
+  padding: 6px;
+  text-align: center;
+  position: absolute;
+  right: 29px;
+  top: 597px;
+
+  &:hover {
+    color: #F8FAE5;
+  }
 }
