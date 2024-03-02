@@ -21,16 +21,30 @@
 }
 
 
-#navbarSupportedContent > ul > li > a {
+.nav-home > a, .nav-restaurants > a, .nav-bookings > a {
   border: 1px solid black;
   border-radius: 10px;
   padding: 7px 18px;
+  margin: 0 6px;
 
   &:hover {
     color: #F8FAE5;
     border: 2px solid rgba(228, 228, 228, 0.25);
     transform: translate(-2px, -2px);
     transition: all .15s ease-in-out;
+  }
+}
+
+.navbar-mrst .container-fluid #navbarSupportedContent li.nav-login a.nav-link {
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 7px 18px;
+
+    &:hover {
+      color: #F8FAE5;
+      border: 2px solid rgba(228, 228, 228, 0.25);
+      transform: translate(-2px, -2px);
+      transition: all .15s ease-in-out;
   }
 }
 
