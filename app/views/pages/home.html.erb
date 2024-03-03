@@ -1,17 +1,14 @@
-<div class="bg">
-    <div class="bg-img" style="background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),
-                url(<%= asset_path 'delicious_breakfast_table_resized.jpg'%>);">
-      <div class="text-content">
-        <h1>My Resto Table</h1>
-        <p>your reservation's buddy</p>
-      </div>
-    </div>
-</div>
 
-<div class="form">
+  <div class="bg-img" style="background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(<%= asset_path('delicious_breakfast_table_resized.jpg')%>)"></div>
+
+  <div class="text-content">
+    <h1>My Resto Table</h1>
+    <p>your reservation's buddy</p>
+  </div>
+
   <% if current_user.present? %>
     <div class="search-form">
-      <%= form_with url: restaurants_path, method: :get, class: "d-flex" do %>
+      <%= form_with url: restaurants_path, method: :get, class: "form" do %>
         <%= text_field_tag :queryname,
               params[:queryname],
               class: "form-control",
@@ -31,4 +28,3 @@
       <% end %>
     </div>
   <% end %>
-</div>

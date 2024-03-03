@@ -1,4 +1,5 @@
-<div class="container">
+<div class="bg-img" style="background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(<%= asset_path('top-view-food-banquet_resized.jpg')%>)"></div>
+
   <div class="restaurant">
     <h2><%= @restaurant.name %>'s Restaurant </h2>
     <p>Address: <%= @restaurant.address %></p>
@@ -25,4 +26,3 @@
     <%= link_to "Restaurants", restaurants_path %>
     <%= link_to "Book a table", new_restaurant_booking_path(restaurant_id: @restaurant.id) %>
   </div>
-</div>

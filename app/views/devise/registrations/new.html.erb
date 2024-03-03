@@ -2,8 +2,7 @@
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <div class="container">
-          <h2 class="title-sign-up">Sign up</h2>
+          <h2 class="modal-title">Sign up</h2>
 
           <%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
             <%= f.error_notification %>
@@ -39,7 +38,6 @@
           <% end %>
 
           <%= render "devise/shared/links" %>
-        </div>
       </div>
     </div>
   </div>

@@ -31,7 +31,7 @@
 .modal-content {
   border-radius: 10px;
   background: #B19470;
-  width: 80%;
+  width: 90%;
 }
 
 .modal-body {
@@ -39,7 +39,7 @@
   display: grid;
 }
 
-.modal-title, .title-sign-up, .form-label, .form-text {
+.modal-title, .form-label, .form-text {
   color: #5e3830;
 }
 
@@ -84,16 +84,13 @@
 }
 
 
-a.log-in {
+a.log-in, a.sign-up {
   text-decoration: none;
   color: #5e3830;
   border: 1px solid rgba(228, 228, 228, 0.25);
   border-radius: 6px;
   padding: 6px;
   text-align: center;
-  position: absolute;
-  right: 29px;
-  top: 597px;
 
   &:hover {
     color: #F8FAE5;
