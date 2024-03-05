@@ -1,0 +1,43 @@
+.modal-content {
+  width: 500px;
+  margin: 15px auto;
+}
+
+.modal-header {
+  padding: 12px;
+}
+
+
+#modal .btn-cancel {
+  background-color: #B19470;
+  color: #5e3830;
+  border: 1px solid rgba(228, 228, 228, 0.25);
+  border-radius: 6px;
+  padding: 6px 12px;
+  margin-left: 12px;
+
+  &:hover {
+    color: #F8FAE5;
+  }
+}
+.edit-buttons {
+  display: flex;
+}
+
+#modal a {
+  text-decoration: none;
+  color: #5e3830;
+  border: 1px solid rgba(228, 228, 228, 0.25);
+  border-radius: 6px;
+  padding: 6px 12px;
+  text-align: center;
+
+  &:hover {
+    color: #F8FAE5;
+  }
+}
+
+
+.form-actions {
+  display: flex;
+}

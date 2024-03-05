@@ -3,3 +3,13 @@
 //   flex-direction: column;
 //   min-height: 100vh;
 // }
+.body-container {
+  background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url('delicious_breakfast_table_resized.jpg');
+  background-size: cover;
+  background-position: top;
+  position: fixed;
+  top: 60px;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+}

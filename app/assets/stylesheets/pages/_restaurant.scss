@@ -5,12 +5,49 @@
   left: 500px;
   border: 1.5px solid #5e3830;
   border-radius: 18px;
-  box-shadow: #b194702e 2px 2px 10px 2px;
+  box-shadow: #76453B 2px 2px 10px 2px;
   background-color: #f8fae591;
   padding: 10px 10px;
 }
 
-h2 {
+h2#restaurant-name, p#restaurant-address, p#restaurant-city, p#restaurant-postal-code, p#restaurant-rating, p#restaurant-reviews {
   color: #76453B;
-  text-shadow: 2px 3px 6px #b07e00df;
+  text-shadow: 2px 3px 6px #F8FAE5;
+}
+
+ul.reviews {
+  width: 460px;
+  height: 100px;
+  display: block;
+  list-style-type: none;
+  padding: 6px 12px;
+  margin: 6px 0;
+}
+
+li.review-item {
+  padding: 6px 12px;
+  box-sizing: border-box;
+  border: 1.5px solid #5e3830;
+  border-radius: 12px;
+  font-size: 14px;
+  resize: vertical;
+}
+
+.restaurant-buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.restaurant-buttons a {
+  text-decoration: none;
+  color: #5e3830;
+  border: 2px solid #5e3830;
+  border-radius: 6px;
+  padding: 6px;
+  margin: 6px 6px;
+  text-align: center;
+
+  &:hover {
+    color: #F8FAE5;
+  }
 }

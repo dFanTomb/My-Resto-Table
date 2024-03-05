@@ -1,3 +1,14 @@
+.body-container {
+  background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url('top-view-food-banquet_resized.jpg');
+  background-size: cover;
+  background-position: top;
+  position: fixed;
+  top: 60px;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
 .restaurants-container {
   display: flex;
   flex-direction: column;
@@ -16,14 +27,17 @@ ul {
   border: 1px solid rgba(171, 171, 171, 0.237);
   padding: 6px 12px;
   margin: 8px 14px;
+  background-color: #f8fae535;
+  box-shadow: 2px 2px 2px 1px #b194702e;
 }
 
 .restaurant-card a {
-  color: rgba(128, 128, 128, 0.836);
+  color: #F8FAE5;
   text-decoration: none;
 
   &:hover {
     color: rgba(239, 89, 25, 0.836);
+    font-weight: bold;
   }
 }
 
