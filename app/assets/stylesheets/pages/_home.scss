@@ -1,11 +1,7 @@
 .bg-img {
-  // background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url('delicious_breakfast_table_resized.jpg');
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
-  // padding: 270px 350px;
-  // width: 100vw;
-  // position: relative;
   position: fixed;
   top: 60px;
   left: 0;
@@ -22,22 +18,12 @@ h1, p {
   position: absolute;
   top: 47%;
   left: 27%;
-  // width: 35%;
   width: 550px;
 }
 
 
-// .search-form {
-//   display: flex;
-//   // right: 20vw;
-//   // left: 20vh;
-// }
-
 .form {
   display: flex;
-  // position: absolute;
-  // top: 59vh;
-  // left: 410px;
 }
 
 #queryname, #querycity, #queryaddress {

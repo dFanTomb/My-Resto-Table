@@ -1,6 +1,8 @@
-<div class="form p-5">
+<div class="booking-container">
     <%= simple_form_for [@restaurant, @booking] do |f| %>
-      <%= f.input :date, as: :datetime, order: [:day, :month, :year] %>
-      <%= f.submit %>
+      <div id="booking-form">
+        <%= f.input :date, as: :datetime, order: [:day, :month, :year], label_html: {class: 'label-text'} %>
+        <%= f.submit %>
+      </div>
     <% end %>
   </div>
