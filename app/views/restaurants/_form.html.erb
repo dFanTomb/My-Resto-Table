@@ -1,9 +1,9 @@
 <div class="simple-form p-5">
   <%= simple_form_for(restaurant) do |f| %>
-    <%= f.input :name %>
-    <%= f.input :address %>
-    <%= f.input :city %>
-    <%= f.input :postal_code %>
+    <%= f.input :name, label_html: {class: 'name-text'} %>
+    <%= f.input :address, label_html: {class: 'address-text'} %>
+    <%= f.input :city, label_html: {class: 'city-text'} %>
+    <%= f.input :postal_code, label_html: {class: 'postal-code-text'} %>
     <%= f.input :rating, collection: 1..5, as: :radio_buttons %>
     <%= f.submit %>
   <% end %>

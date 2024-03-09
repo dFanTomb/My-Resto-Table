@@ -1,7 +1,11 @@
-<h2>New review for <%= @restaurant.name%> restaurant</h2>
-<%= simple_form_for [@restaurant, @review] do |f| %>
-  <%= f.input :content %>
-  <%= f.submit "Submit review", class: "btn btn-primary" %>
-<% end %>
+<div class="review-container">
+  <div class="review-card">
+    <h2 id="review-title">New review for <%= @restaurant.name%> restaurant</h2>
+    <%= simple_form_for [@restaurant, @review] do |f| %>
+      <%= f.input :content, label_html: {class: 'content-text'} %>
+      <%= f.submit "Submit review", class: "btn btn-primary" %>
+    <% end %>
 
-<%= link_to "Back", :back %>
+    <%= link_to "Back", :back %>
+  </div>
+</div>

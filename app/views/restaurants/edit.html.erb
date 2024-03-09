@@ -1,5 +1,7 @@
-<div class="container">
-  <h2>Edit <%= @restaurant.name %></h2>
+<div class="edit-restaurant-container">
+  <div class="edit-restaurant-card">
+    <h2 id="edit-restaurant-title">Edit <%= @restaurant.name %></h2>
 
-  <%= render "form", restaurant: @restaurant %>
+    <%= render "form", restaurant: @restaurant %>
+  </div>
 </div>

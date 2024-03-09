@@ -1,3 +1,7 @@
-<h2>Edit Booking of <%= @restaurant.name %> restaurant</h2>
-<%= render "form", booking: @booking %>
-<%= link_to 'Back', bookings_path %>
+<div class="edit-booking-container">
+  <div class="edit-booking-card">
+    <h2 id="edit-booking-title">Edit Booking of <%= @restaurant.name %> restaurant</h2>
+    <%= render "form", booking: @booking %>
+    <%= link_to 'Back', bookings_path %>
+  </div>
+</div>

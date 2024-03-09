@@ -51,3 +51,84 @@ li.review-item {
     color: #F8FAE5;
   }
 }
+
+
+.edit-restaurant-container, .review-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.edit-restaurant-card, .review-card {
+  width: 600px;
+  margin-top: 90px;
+}
+
+h2#edit-restaurant-title, h2#review-title {
+  text-align: center;
+  color: #F8FAE5;
+  text-shadow: 3px 3px 6px #b07e0075;
+}
+
+.edit-restaurant-card .form-control {
+  border-radius: 6px;
+}
+
+.edit-restaurant-card {
+  .name-text, .address-text, .city-text, .postal-code-text, .radio_buttons {
+    color: #F8FAE5;
+  }
+}
+
+.edit-restaurant-card .radio_buttons {
+  display: flex;
+  .form-check {
+    margin: 0 5px;
+  }
+}
+
+.edit-restaurant-card {
+  input[type=submit], a {
+    color: #e9e9e9;
+    background-color: #5e3830;
+    border: none;
+    border-radius: 6px;
+    padding: 6px 12px;
+    margin: 12px 0;
+
+      &:hover {
+        background-color: #B19470;
+      }
+  }
+  a {
+    text-decoration: none;
+  }
+}
+
+
+#review_content {
+  border-radius: 6px;
+}
+
+.content-text {
+  color: #F8FAE5;
+}
+
+.review-card {
+  a {
+    text-decoration: none;
+    color: #e9e9e9;
+    background-color: #5e3830;
+    border: none;
+    border-radius: 6px;
+    padding: 6px 12px;
+
+      &:hover {
+        background-color: #B19470;
+      }
+  }
+}
+
+#new_review {
+  margin-bottom: 12px;
+}

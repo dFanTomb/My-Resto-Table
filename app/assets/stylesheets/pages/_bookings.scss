@@ -92,3 +92,35 @@ li a {
 #booking-list {
   margin-top: 10px;
 }
+
+h2#edit-booking-title {
+  text-align: center;
+  color: #F8FAE5;
+  text-shadow: 3px 3px 6px #b07e0075;
+  margin-top: 90px;
+}
+
+.edit-booking-container {
+  display: flex;
+  justify-content: center;
+
+  .booking-container {
+    margin-top: 0;
+    margin-bottom: 12px;
+  }
+}
+
+.edit-booking-card {
+  a {
+    text-decoration: none;
+    color: #e9e9e9;
+    background-color: #5e3830;
+    border: none;
+    border-radius: 6px;
+    padding: 6px 12px;
+
+      &:hover {
+        background-color: #B19470;
+      }
+  }
+}
